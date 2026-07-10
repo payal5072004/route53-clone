@@ -42,7 +42,10 @@ app = FastAPI(
 # call this API. In a real deployment, tighten this to your actual domain.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://route53-clone.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

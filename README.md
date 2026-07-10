@@ -30,8 +30,8 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 ```
 
-The API is now running at `http://localhost:8000`.
-Interactive API docs (Swagger UI): `http://localhost:8000/docs`
+The API is now running at `https://route53-clone-isc4.onrender.com`.
+Interactive API docs (Swagger UI): `https://route53-clone-isc4.onrender.com/docs`
 
 On first run, it automatically:
 - Creates `route53.db` (SQLite file) with all tables
@@ -48,7 +48,7 @@ npm run dev
 ```
 
 Visit `http://localhost:3000`. It talks to the backend at the URL configured
-in `frontend/.env.local` (defaults to `http://localhost:8000`).
+in `frontend/.env.local` (defaults to `https://route53-clone-isc4.onrender.com`).
 
 Log in with `admin` / `admin123`.
 
@@ -145,7 +145,7 @@ hosted zone automatically creates an `NS` record for it.
 
 ## 4. API Overview
 
-Base URL: `http://localhost:8000`. All routes except `/api/auth/login` and
+Base URL: `https://route53-clone-isc4.onrender.com`. All routes except `/api/auth/login` and
 `/api/health` require an `Authorization: Bearer <token>` header.
 
 ### Auth
