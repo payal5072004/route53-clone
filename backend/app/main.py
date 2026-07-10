@@ -44,7 +44,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000", 
-        "https://route53-clone-omega.vercel.app/",
+        "https://route53-clone-omega.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
